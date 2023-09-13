@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.util.*;
 
-public class TextEditor extends Application {
+public class TextEditorApplication extends Application {
     private StringBuilder text;
     private List<String> undoStack;
     private List<String> redoStack;
@@ -20,7 +20,7 @@ public class TextEditor extends Application {
     private UndoManager undoManager;
 
 
-    public TextEditor() {
+    public void TextEditor() {
         text = new StringBuilder();
         undoStack = new ArrayList<>();
         redoStack = new ArrayList<>();
